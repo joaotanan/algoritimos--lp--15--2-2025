@@ -1,39 +1,68 @@
 #include <stdio.h>
 
-int main(int argc, char* argv[]){
+int main() {
+    int tipoFilme, genero, subtipo;
 
-printf("Digite a idade: ");
+    printf("Escolha o tipo de filme:\n");
+    printf("1 - Leve\n");
+    printf("2 - Intenso\n");
+    scanf("%d", &tipoFilme);
 
-char opcao;
-printf("Digite o tipo de filme: \n");
-printf("l - leve\n");
-printf("i - intenso\n");
-scanf("%c", &opcao);
+    if (tipoFilme = 1) {
+        printf("Escolha o genero:\n");
+        printf("1 - Comedia\n");
+        printf("2 - Animacao\n");
+        scanf("%d", &genero);
 
-if (opcao == 'l'){
-    char generoleve;
-    printf("Escolha o genero do seu filme\n");
-    printf("C - Comedia\n");
-    printf("A - Animação\n");
-    printf("digite a opcao: \n");
-    scanf("%c", &generoleve);
+        if (genero = 1) {
+            printf("Assista ao filme: As Branquelas\n");
+        } else if (genero == 2) {
+            printf("Assista ao filme: Toy Story\n");
+        } else {
+            printf("Opcao invalida.\n");
+        }
 
-    if(generoleve == 'C'){
-        printf("Assista o filme 'As branquelas'.\n");
-    } else if (generoleve == 'A'){
-        printf("Assista o filme 'toy story'.\n")
+    } else if (tipoFilme = 2) {
+        printf("Escolha o genero:\n");
+        printf("1 - Terror\n");
+        printf("2 - Acao\n");
+        scanf("%d", &genero);
+
+        if (genero = 1) {
+            printf("Escolha o tipo de terror:\n");
+            printf("1 - Psicologico\n");
+            printf("2 - Sobrenatural\n");
+            scanf("%d", &subtipo);
+
+            if (subtipo = 1) {
+                printf("Assista ao filme: Coral\n");
+            } else if (subtipo = 2) {
+                printf("Assista ao filme: Invocacao do mal\n");
+            } else {
+                printf("Opcao invalida.\n");
+            }
+
+        } else if (genero = 2) {
+            printf("Escolha o tipo de acao:\n");
+            printf("1 - Super-herois\n");
+            printf("2 - Aventura realista\n");
+            scanf("%d", &subtipo);
+
+            if (subtipo = 1) {
+                printf("Assista ao filme: Vingadores: Ultimato\n");
+            } else if (subtipo = 2) {
+                printf("Assista ao filme: Mad Max: Estrada da Furia\n");
+            } else {
+                printf("Opcao invalida.\n");
+            }
+
+        } else {
+            printf("Opcao invalida.\n");
+        }
+
     } else {
-        printf("Opcao invalida para o genero.\n")
-
+        printf("Opcao invalida.\n");
     }
 
-}else if(opcao == 'l'){
-    char generointenso;
-    printf("Escolha o genero do seu filme\n");
-    printf("T - Terror\n");
-    printf("A - Acao\n");
-    printf("digite a opcao: \n");
-    scanf("%C" , &generointenso);
-}
-
+    return 0;
 }
