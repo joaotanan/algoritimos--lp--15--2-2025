@@ -22,7 +22,7 @@ int main() {
     if (Primo) {
         printf("%d e um numero primo.\n", numero);
     } else {
-        printf("%d não e um numero primo.\n", numero);
+        printf("%d nao e um numero primo.\n", numero);
     }
 
     return 0;
